@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/send_mail.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="/function.js" defer></script>
+    <link rel="icon" href="img/logo_small.png" type="image/x-icon" />
+    <title>Kochwelt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="contentHeader width">
+            <a href="/index.html"><img src="/img/logo.png" alt="Logo" /></a>
+            <nav>
+                <a href="/index.html" class="naviLink">Start</a>
+                <a href="/recipies/receipt_Zaziki.html" class="naviLink">Rezept des Tages</a>
+                <a href="/contact.html" class="naviLink">Kontakt</a>
+                <a href="/impress.html" class="naviLink">Impressum</a>
+            </nav>
+            <button id="buttonHamburger" onclick="toggleMobileNav()">
+                <img src="/img/icons8-menü-50.png" alt="HamburgerMenue" />
+            </button>
+            <!--<a target="_blank" href="https://icons8.com/icon/8113/menu">Menü</a> Icon von <a target="_blank" href="https://icons8.com">Icons8</a>-->
+            <div id="mobileNav" class="mobileNav closed">
+                <button id="buttonClose" onclick="toggleMobileNav()">X</button>
+                <a href="/index.html" class="naviLink">Start</a>
+                <a href="/recipies/receipt_Zaziki.html" class="naviLink">Rezept des Tages</a>
+                <a href="/contact.html" class="naviLink">Kontakt</a>
+                <a href="/impress.html" class="naviLink">Impressum</a>
+            </div>
+        </div>
+    </header>
+    <section class="sectionMailFeedback">
+        <div class="sectionMailFeedbackContent width">
+            <h2>Email wurde erfolgreich versendet</h2>
+            <a href="/index.html"><img src="/img/thumb_up.png" alt="Daumen hoch"></a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_main">
+            <div class="footer_left">
+                <div class="footer_social_section">
+                    <h4>Folge uns</h4>
+                    <div class="footer_social_logo">
+                        <a href="https://www.facebook.com/">
+                            <img src="/img/icons/socialmedia/facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img src="/img/icons/socialmedia/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="https://www.tiktok.com/">
+                            <img src="/img/icons/socialmedia/tiktok.svg" alt="TikTok">
+                        </a>
+                        <a href="https://www.tiktok.com/">
+                            <img src="/img/icons/socialmedia/youtube.svg" alt="Youtube">
+                        </a>
+                        <a href="https://www.pinterest.com/">
+                            <img src="/img/icons/socialmedia/pinterest.svg" alt="Pinterest">
+                        </a>
+                    </div>
+                </div>
+                <img src="img/logo.png" alt="website logo" class="footer_logo">
+            </div>
+            <div class="footer_right">
+                <h5>QUICKLINKS</h5>
+                <a href="/index.html" class="footer_link">Start</a>
+                <a href="/recipies/receipt_Zaziki.html" class="footer_link">Rezept des Tages</a>
+                <a href="/contact.html" class="footer_link">Kontakt</a>
+                <a href="/impress.html" class="footer_link">Impressum</a>
+                <a href="/private_policy.html" class="footer_link">Datenschutzerkl&auml;rung</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.sectionMailFeedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionMailFeedbackContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.sectionMailFeedbackContent h2 {
+    text-align: center;
+}
+
+.sectionMailFeedbackContent img {
+    height: 300px;
+    transition: all 250ms ease-in-out;
+}
+
+.sectionMailFeedbackContent img:hover {
+    transform: scale(1.2);
+}

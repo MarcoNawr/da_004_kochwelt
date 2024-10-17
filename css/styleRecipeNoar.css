@@ -1,0 +1,46 @@
+/* ==================================================
+receipt title --> Linguine Gamberetti (Normann)
+==================================================*/
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.title {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.linguine-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.recipe-meta {
+  display: flex;
+  gap: 20px;
+}
+
+.recipe-meta span {
+  font-size: 16px;
+}
+
+.descripton {
+  height: 16px;
+  width: 16px;
+}
+
+/* ==================================================
+    section --> ingredients
+==================================================*/
+
+/* ==================================================
+    section --> preparation
+==================================================*/
+
+/* ==================================================
+    section --> author
+==================================================*/

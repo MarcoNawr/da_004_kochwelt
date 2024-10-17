@@ -1,0 +1,49 @@
+.contactForm {
+    /*TODO: Mittig in der height des body ODER der viewheight?*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactFormContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #DCDCDC;
+    border-radius: 16px;
+    padding: 32px !important;
+    flex: 0.5;
+}
+
+form {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+textarea {
+    padding: 8px 32px;
+    white-space: nowrap;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+}
+
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#submitButton {
+    align-self: center;
+    border: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,341 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-size: 20px;
+    overflow-x: hidden;
+  }
+  
+  .width {
+    max-width: 1920px;
+    min-width: 320px;
+    padding: 0px 100px 0px 100px;
+  }
+  
+  .padding-top-bottom {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+  
+  body {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  h2 {
+    font-size: 48px;
+  }
+  
+  section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  
+  .buttonLink {
+    background-color: brown;
+    padding: 8px 32px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .buttonLink:hover {
+    background-color:aqua;
+  }
+  
+  @media (max-width: 970px) {
+    .width {
+      padding: 0px 75px 0px 75px;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    .width {
+      padding: 0px 50px 0px 50px;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .width {
+      padding: 0px 25px 0px 25px;
+    }
+  
+    body {
+      font-size: 18px;
+    }
+  
+    h2 {
+      font-size: 36px;
+    }
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    box-shadow: 0px 3px 5px 0px rgba(219, 219, 219, 0.75);
+  }
+  
+  .contentHeader {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  
+    /*für mobileNav nötig*/
+    position: relative;
+  }
+  
+  .contentHeader > a {
+    height: 70%;
+  }
+  
+  .contentHeader img {
+    height: 70%;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 16px;
+  }
+  
+  nav a,
+  .mobileNav a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+  }
+  
+  .naviLink {
+    transition: border-bottom 0.01s;
+  }
+  
+  .naviLink:hover {
+    border-bottom: 3px solid rgb(8, 156, 8);
+    color: rgb(8, 156, 8);
+  }
+  
+  .naviLinkSelected {
+    border-bottom: 3px solid green;
+    color: green;
+  }
+
+  .mobileNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 32px;
+    padding: 16px 24px 150px 24px;
+    background-color: rgba(0, 0, 0, 0.9);
+  
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    transition: all 250ms ease-in-out;
+  }
+  
+  .mobileNav .naviLinkSelected {
+    border-bottom: 3px solid green;
+    color: green;
+  }
+  
+  .mobileNav a {
+    color: white;
+  }
+  
+  .closed {
+    transform: translateX(100%);
+  }
+  
+  #buttonHamburger {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  #buttonClose {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    align-self: flex-end;
+    color: tomato;
+    font-size: 24px;
+    font-weight: bolder;
+  }
+  
+  @media (max-width: 970px) {
+    nav {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 970px) {
+    .mobileNav {
+      display: none;
+    }
+  
+    #buttonHamburger {
+      display: none;
+    }
+  }
+
+  /* Marzi Rezept
+  =======================================*/
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  
+  .title {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  
+  .pizza-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .title-signs {
+    display: flex;
+    gap: 20px;
+    
+  }
+  
+  .title-signs span {
+    font-size: 20px;
+  }
+  
+  .descripton {
+    height: 16px;
+    width: 16px;
+  }
+
+  .ingredients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .ingredient {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+form {
+    padding-top: 24px;
+    display: flex;
+    align-items: stretch;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin-right: 24px;
+    align-self: center;
+}
+
+form input {
+    padding: 8px 32px;
+    white-space: nowrap;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+}
+
+form button {
+    border: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+}
+
+
+@media(max-width: 670px) {
+    form {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+.amount {
+    padding: 16px 24px;
+    width: 5%;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    text-align: right;
+}
+
+.type {
+    padding: 16px 24px;
+    width: 95%;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.preparation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainpreparation {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.maindescription p{
+   margin-top: 50px;
+}
+
+.author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainauthor {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: auto;
+}
+
+.authorinfo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.authorinfo img {
+    width: 110px;
+    border-radius: 100%;
+    object-fit: cover;
+    
+}
+
+  

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguine Gamba</title>
+    <link rel="icon" href="/img/logo_small.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/styleReceipt.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/function.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="contentHeader width">
+            <a href="/index.html"><img src="/img/logo.png" alt="Logo"></a>
+            <nav>
+                <a href="/index.html" class="naviLink">Start</a>
+                <a href="/recipies/receipt_Zaziki.html" class="naviLink">Rezept des Tages</a>
+                <a href="/contact.html" class="naviLink">Kontakt</a>
+                <a href="/impress.html" class="naviLink">Impressum</a>
+            </nav>
+            <button id="buttonHamburger" onclick="toggleMobileNav()"><img src="/img/icons8-menü-50.png"
+                    alt="HamburgerMenue"></button>
+            <!--<a target="_blank" href="https://icons8.com/icon/8113/menu">Menü</a> Icon von <a target="_blank" href="https://icons8.com">Icons8</a>-->
+            <div id="mobileNav" class="mobileNav closed">
+                <button id="buttonClose" onclick="toggleMobileNav()">X</button>
+                <a href="/index.html" class="naviLink">Start</a>
+                <a href="/recipies/receipt_Zaziki.html" class="naviLink">Rezept des Tages</a>
+                <a href="/contact.html" class="naviLink">Kontakt</a>
+                <a href="/impress.html" class="naviLink">Impressum</a>
+            </div>
+        </div>
+    </header>
+    <section class="title">
+        <div class="titleContent width">
+            <h2>Linguine Gamba</h2>
+            <img class="receiptImg" src="/img/spaghetti.jpg" alt="Linguine Gamba">
+            <div class="receiptInfos">
+                <div class="receiptInfo">
+                    <img class="receiptIcon" src="/img/icons/clock-regular.svg" alt="Uhr Icon">
+                    <p>30 Min.</p>
+                </div>
+                <div class="receiptInfo">
+                    <img class="receiptIcon" src="/img/icons/brain-solid.svg" alt="Brain Icon">
+                    <p>simpel</p>
+                </div>
+                <div class="receiptInfo">
+                    <img class="receiptIcon" src="/img/icons/calendar-alt-regular.svg" alt="Kalender Icon">
+                    <p>16.10.2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ingredients">
+        <div class="ingredientsContent width">
+            <form>
+                <label for="amount">Zutaten für</label>
+                <input id="amount" min=1 type="number" placeholder="1" value="4">
+                <button class="buttonLink">Porttionen</button>
+            </form>
+            <table>
+                <tr class="tableRow" id="tableRow1">
+                    <td class="tdAmount">450 g</td>
+                    <td class="tdDecription">Garnelen</td>
+                </tr>
+                <tr class="tableRow" id="tableRow2">
+                    <td class="tdAmount">500 g</td>
+                    <td class="tdDecription">Linguine</td>
+                </tr>
+                <tr class="tableRow" id="tableRow3">
+                    <td class="tdAmount"> 1 große</td>
+                    <td class="tdDecription">Zwiebel(n)</td>
+                </tr>
+                <tr class="tableRow" id="tableRow4">
+                    <td class="tdAmount">3 Zehe(n)</td>
+                    <td class="tdDecription">Knoblauch</td>
+                </tr>
+                <tr class="tableRow" id="tableRow5">
+                    <td class="tdAmount">100 ml</td>
+                    <td class="tdDecription">Weißwein</td>
+                </tr>
+                <tr class="tableRow" id="tableRow6">
+                    <td class="tdAmount">1</td>
+                    <td class="tdDecription">Chilischote(n)</td>
+                </tr>
+                <tr class="tableRow" id="tableRow7">
+                    <td class="tdAmount">4 Blatt</td>
+                    <td class="tdDecription">Salbei</td>
+                </tr>
+                <tr class="tableRow" id="tableRow8">
+                    <td class="tdAmount">1</td>
+                    <td class="tdDecription">Zitrone(n)</td>
+                </tr>
+                <tr class="tableRow" id="tableRow9">
+                    <td class="tdAmount">50 g</td>
+                    <td class="tdDecription">Tomatenmark</td>
+                </tr>
+                <tr class="tableRow" id="tableRow10">
+                    <td class="tdAmount">evtl.</td>
+                    <td class="tdDecription">Parmesan</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="preparation">
+        <div class="preparationContent width">
+            <h2>Zubereitung</h2>
+            <div class="receiptInfos">
+                <div class="receiptInfo">
+                    <img class="receiptIcon" src="/img/icons/clock-regular.svg" alt="Uhr Icon">
+                    <p>ca. 15 Minuten</p>
+                </div>
+                <div class="receiptInfo">
+                    <img class="receiptIcon" src="/img/icons/clock-regular.svg" alt="Uhr Icon">
+                    <p>Gesamtzeit ca. 30 Minuten</p>
+                </div>
+            </div>
+            <ol>
+                <li> <b> Schritt:</b><span class="tab"> </span>Die Zwiebeln in feine Würfelchen hacken und in Olivenöl
+                    anschwitzen</li>
+                <li> <b> Schritt:</b><span class="tab"> </span>Nach 1 - 2 Minuten Knoblauch, Salbeiblätter und
+                    Chilischote hinzufügen</li>
+                <li> <b> Schritt:</b><span class="tab"> </span>Die Nudeln in reichlich Salzwasser al dente kochen</li>
+                <li> <b> Schritt:</b><span class="tab"> </span>Das Tomatenmark in den Topf zu den Zwiebeln geben und gut
+                    verteilen</li>
+                <li> <b> Schritt:</b><span class="tab"> </span>Die Soße nun mit 1 1/2 cl Olivenöl und einem guten Schuss
+                    Weißwein ablöschen</li>
+                <li> <b> Schritt:</b><span class="tab"> </span>Mit Salz, Pfeffer und Oregano abschmecken und vor sich
+                    hin köcheln lassen</li>
+                <li> <b> Schritt:</b><span class="tab"> </span>Nun die Shrimps mit Öl in eine Pfanne geben und mit dem
+                    Saft einer halben Zitrone anschwitzen</li>
+                <li> <b> Schritt:</b><span class="tab"> </span>Die Shrimps samt Öl mit in den Topf geben und nochmals
+                    abschmecken</li>
+                <li> <b> Schritt:</b><span class="tab"> </span>Die Nudeln abgießen, zur Soße geben und unterheben</li>
+                <li> <b> Schritt:</b><span class="tab"> </span>Servieren und evtl. mit Basilikum und gehobeltem Parmesan
+                    dekorieren</li>
+            </ol>
+        </div>
+    </section>
+    <section class="creator">
+        <div class="creatorContent width">
+            <h3>Rezept erstellt von</h3>
+            <div class="creatorInfo">
+                <img src="/img//profile_normann.JPEG" alt="Bild vom Ersteller">
+                <span>Normann</span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_main">
+            <div class="footer_left">
+                <div class="footer_social_section">
+                    <h4>Folge uns</h4>
+                    <div class="footer_social_logo">
+                        <a href="https://www.facebook.com/">
+                            <img src="/img/icons/socialmedia/facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img src="/img/icons/socialmedia/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="https://www.tiktok.com/">
+                            <img src="/img/icons/socialmedia/tiktok.svg" alt="TikTok">
+                        </a>
+                        <a href="https://www.tiktok.com/">
+                            <img src="/img/icons/socialmedia/youtube.svg" alt="Youtube">
+                        </a>
+                        <a href="https://www.pinterest.com/">
+                            <img src="/img/icons/socialmedia/pinterest.svg" alt="Pinterest">
+                        </a>
+                    </div>
+                </div>
+                <img src="/img/logo.png" alt="website logo" class="footer_logo">
+            </div>
+            <div class="footer_right">
+                <h5>QUICKLINKS</h5>
+                <a href="/index.html" class="footer_link">Start</a>
+                <a href="/recipies/receipt_Zaziki.html" class="footer_link">Rezept des Tages</a>
+                <a href="/contact.html" class="footer_link">Kontakt</a>
+                <a href="/impress.html" class="footer_link">Impressum</a>
+                <a href="/private_policy.html" class="footer_link">Datenschutzerkl&auml;rung</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

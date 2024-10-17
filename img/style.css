@@ -1,0 +1,343 @@
+/* ==================================================
+Global
+==================================================*/
+
+/* DON'T TOUCH THIS */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 20px;
+}
+
+.width {
+  max-width: 1920px;
+  min-width: 320px;
+  padding: 0px 100px 0px 100px;
+}
+
+.padding-top-bottom {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.buttonLink {
+  background-color: green;
+  padding: 8px 32px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.buttonLink:hover {
+  background-color: rgb(8, 156, 8);
+}
+
+@media (max-width: 970px) {
+  .width {
+    padding: 0px 75px 0px 75px;
+  }
+}
+
+@media (max-width: 750px) {
+  .width {
+    padding: 0px 50px 0px 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  .width {
+    padding: 0px 25px 0px 25px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+}
+
+/* DON'T TOUCH THIS */
+
+/* ==================================================
+HEADER
+==================================================*/
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  box-shadow: 0px 3px 5px 0px rgba(219, 219, 219, 0.75);
+}
+
+.contentHeader {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+
+  /*für mobileNav nötig*/
+  position: relative;
+  /* overflow: hidden; /*Wenn ausgeblendet OK / wenn eingeblendet wird der vertikale overflow abgeschnitten*/
+  overflow-x: hidden;
+  /* Wenn ausgeblendet OK / Wenn ausgeblendet ist hab ich ne ungewollte Vertikale-Scrollbar*/
+}
+
+.contentHeader img {
+  height: 80%;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 16px;
+}
+
+nav a,
+.mobileNav a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  padding-bottom: 5px;
+}
+
+.naviLink {
+  transition: border-bottom 0.01s;
+}
+
+.naviLink:hover {
+  border-bottom: 3px solid rgb(8, 156, 8);
+  color: rgb(8, 156, 8);
+}
+
+.naviLinkSelected {
+  border-bottom: 3px solid green;
+  color: green;
+}
+
+/* mobileNav */
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 32px;
+  padding: 16px 24px 150px 24px;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100vh;
+  transition: all 250ms ease-in-out;
+}
+
+.mobileNav .naviLinkSelected {
+  border-bottom: 3px solid green;
+  color: green;
+}
+
+.mobileNav a {
+  color: white;
+}
+
+.closed {
+  transform: translateX(100%);
+}
+
+#buttonHamburger {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#buttonClose {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  align-self: flex-end;
+  color: tomato;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+@media (max-width: 970px) {
+  nav {
+    display: none;
+  }
+}
+
+@media (min-width: 970px) {
+  .mobileNav {
+    display: none;
+  }
+
+  #buttonHamburger {
+    display: none;
+  }
+}
+
+/* ==================================================
+FOOTER
+==================================================*/
+
+/* ==================================================
+ATF
+==================================================*/
+.atf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentATF {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+}
+
+.contentATF img {
+  width: 50%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.contentATF__text {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contentATF__text p {
+  flex: 1;
+}
+
+.contentATF__text a {
+  align-self: flex-start;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 970px) {
+  .contentATF {
+    flex-direction: column;
+  }
+
+  .contentATF img {
+    width: 100%;
+  }
+}
+
+/* ==================================================
+new-recipes
+==================================================*/
+
+.new_recipes {
+  background-color: rgb(237, 237, 237);
+  display: flex;
+  flex-direction: column;
+}
+
+.new_recipes h2 {
+  font-family: "raleway";
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.recipes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.recipe img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe span {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+/* ==================================================
+info
+==================================================*/
+
+.info {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin-top: 120px;
+  margin-right: 160px;
+  margin-left: 160px;
+}
+
+.info h2 {
+  font-size: 35px;
+  font-family: "Raleway", sans-serif;
+  
+}
+
+
+.infoshape {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  
+}
+
+.infoshape p {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+#wok {
+  padding-left: 25px;
+  padding-top: 25px;
+}
+
+/* ==================================================
+receipt   Dein Rezept
+==================================================*/
+
+/* ==================================================
+impress
+==================================================*/
+
+/* ==================================================
+contact
+==================================================*/

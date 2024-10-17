@@ -1,0 +1,193 @@
+/* ==================================================
+    section => title
+==================================================*/
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.receiptInfos {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.receiptInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 8px 24px;
+    border-radius: 16px;
+}
+
+.receiptImg {
+    height: 35vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.receiptIcon {
+    width: 16px;
+}
+
+/* ==================================================
+    section => ingredients
+==================================================*/
+.ingredients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ingredientsContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+form {
+    padding-top: 24px;
+    display: flex;
+    align-items: stretch;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin-right: 24px;
+    align-self: center;
+}
+
+form input {
+    padding: 8px 32px;
+    white-space: nowrap;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+}
+
+form button {
+    border: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media(max-width: 625px) {
+    form {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+/* ==================================================
+    section => ingredients ==> Table
+==================================================*/
+.tdAmount,
+.tdDecription {
+    padding: 16px 24px;
+}
+
+.tdAmount {
+    width: 10%;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    text-align: right;
+}
+
+.tdDecription {
+    width: 90%;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ==================================================
+    section => preparation
+==================================================*/
+.preparation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preparationContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+ol {
+    list-style-position: inside;
+    list-style-type: decimal-leading-zero;
+}
+
+li {
+    padding: 8px 0px;
+}
+
+li::marker {
+    font-weight: bold;
+}
+
+.tab {
+    margin-left: 20px;
+}
+
+/* ==================================================
+    section => creator
+==================================================*/
+.creator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creatorContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.creatorInfo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.creatorInfo img {
+    width: 128px;
+    border-radius: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.creatorInfo span {
+    font-size: 24px;
+}
+
+/* Generell MediaQuerrys  */
+@media(max-width: 570px) {
+    .receiptInfos {
+        flex-direction: column;
+        align-items: start;
+        gap: 8px;
+    }
+}

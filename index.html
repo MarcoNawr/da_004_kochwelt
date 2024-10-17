@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="/function.js" defer></script>
+  <link rel="icon" href="img/logo_small.png" type="image/x-icon" />
+  <title>Kochwelt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="contentHeader width">
+      <a href="/index.html"><img src="/img/logo.png" alt="Logo" /></a>
+      <nav>
+        <a href="/index.html" class="naviLinkSelected">Start</a>
+        <a href="/recipies/receipt_Zaziki.html" class="naviLink">Rezept des Tages</a>
+        <a href="/contact.html" class="naviLink">Kontakt</a>
+        <a href="/impress.html" class="naviLink">Impressum</a>
+      </nav>
+      <button id="buttonHamburger" onclick="toggleMobileNav()">
+        <img src="/img/icons8-menü-50.png" alt="HamburgerMenue" />
+      </button>
+      <!--<a target="_blank" href="https://icons8.com/icon/8113/menu">Menü</a> Icon von <a target="_blank" href="https://icons8.com">Icons8</a>-->
+      <div id="mobileNav" class="mobileNav closed">
+        <button id="buttonClose" onclick="toggleMobileNav()">X</button>
+        <a href="/index.html" class="naviLinkSelected">Start</a>
+        <a href="/recipies/receipt_Zaziki.html" class="naviLink">Rezept des Tages</a>
+        <a href="/contact.html" class="naviLink">Kontakt</a>
+        <a href="/impress.html" class="naviLink">Impressum</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="atf">
+    <div class="contentATF width">
+      <img src="/img/zaziki.jpg" alt="" />
+      <div class="contentATF__text">
+        <h2>Zaziki</h2>
+        <p>
+          Zaziki ist ein griechischer Dip aus Joghurt, Gurke und Knoblauch.
+          Für die Zubereitung wird griechischer Joghurt mit fein geriebener
+          Gurke, gehacktem Knoblauch, Olivenöl, Zitronensaft, Salz und Pfeffer
+          vermischt. Optional können frische Kräuter wie Dill oder Minze
+          hinzugefügt werden. Nach dem Abschmecken wird der Dip am besten kalt
+          serviert und passt perfekt zu gegrilltem Fleisch, Fladenbrot oder
+          als Beilage zu mediterranen Gerichten.
+        </p>
+        <a class="buttonLink" href="/recipies/receipt_Zaziki.html">Rezept öffnen</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="new_recipes">
+    <div class="choose_recipes width">
+      <h2>Lust auf was Neues?</h2>
+      <div class="recipes">
+        <a href="recipies/receipt_pizza.html" class="recipe">
+          <img src="./img/pizza.jpg" alt="Pizza" />
+          <span>Pizza La Viala</span>
+        </a>
+
+        <a href="/recipies/receipt_potato.html" class="recipe">
+          <img src="./img/knusprige-ofenkartoffeln.webp" alt="Potato" />
+          <span>Ofenkartoffel</span>
+        </a>
+
+        <a href="recipies/recipe_linguine.html" class="recipe">
+          <img src="./img/spaghetti.jpg" alt="Spaghetti" />
+          <span>Linguine Gamba</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="width">
+      <h2>Pfanne vs. Wok - Was ist besser?</h2>
+      <div class="infoshape">
+        <p>
+          <b>Pfanne:</b> Ideal für das Braten, Grillen und Anbraten von Fleisch,
+          Fisch oder Gemüse auf einer flachen Oberfläche.
+          Bietet eine gleichmäßige Hitzeverteilung und ist einfacher für
+          europäische Gerichte.
+          <br><br>
+
+          <b>Wok:</b> Perfekt für asiatische Gerichte und schnelle Zubereitung mit
+          hoher Hitze, wie Stir-Fry.
+          Durch die runde Form kann man Zutaten mit wenig Öl schnell und
+          gleichmäßig garen.
+
+          <br><br>
+          <b>Fazit:</b> Pfanne für präzises Braten, Wok für schnelles, vielseitiges
+          Kochen mit hohen Temperaturen.
+        </p>
+
+        <img src="./img/wok.jpg" id="wok" />
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer_main">
+      <div class="footer_left">
+        <div class="footer_social_section">
+          <h4>Folge uns</h4>
+          <div class="footer_social_logo">
+            <a href="https://www.facebook.com/">
+              <img src="/img/icons/socialmedia/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/">
+              <img src="/img/icons/socialmedia/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/">
+              <img src="/img/icons/socialmedia/tiktok.svg" alt="TikTok">
+            </a>
+            <a href="https://www.tiktok.com/">
+              <img src="/img/icons/socialmedia/youtube.svg" alt="Youtube">
+            </a>
+            <a href="https://www.pinterest.com/">
+              <img src="/img/icons/socialmedia/pinterest.svg" alt="Pinterest">
+            </a>
+          </div>
+        </div>
+        <img src="img/logo.png" alt="website logo" class="footer_logo">
+      </div>
+      <div class="footer_right">
+        <h5>QUICKLINKS</h5>
+        <a href="index.html" class="footer_link">Start</a>
+        <a href="/recipies/receipt_Zaziki.html" class="footer_link">Rezept des Tages</a>
+        <a href="/contact.html" class="footer_link">Kontakt</a>
+        <a href="/impress.html" class="footer_link">Impressum</a>
+        <a href="/private_policy.html" class="footer_link">Datenschutzerkl&auml;rung</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
